@@ -1,0 +1,11 @@
+name: cokesales-ai-platform
+infra:
+  provider: bicep
+services:
+  cokesales-web:
+    project: ./
+    host: containerapp
+    language: python
+    docker:
+      path: Dockerfile
+      context: ./
